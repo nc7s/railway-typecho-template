@@ -1,4 +1,4 @@
-FROM joyqi/typecho:nightly-php8.0-fpm-alpine
+FROM joyqi/typecho:nightly-php8.0-alpine
 
 RUN mkdir /usr/src/typecho/usr/{plugins,themes}
 RUN touch /usr/src/typecho/usr/{plugins,themes}/.keep
@@ -17,8 +17,6 @@ ENV TYPECHO_DB_PASSWORD "$PGPASSWORD"
 ENV TYPECHO_DB_DATABASE "$PGDATABASE"
 ENV TYPECHO_DB_NEXT=keep
 ENV TYPECHO_INSTALL=1
-ENV PORT=9000
-
-EXPOSE 9000
+ENV PORT=80
 
 RUN echo database host=$TYPECHO_DB_HOST port=$TYPECHO_DB_PORT user=$TYPECHO_DB_USER db=$TYPECHO_DB_DATABASE
