@@ -1,0 +1,12 @@
+#!/bin/sh
+
+export TYPECHO_DB_ADAPTER=Pgsql
+export TYPECHO_DB_HOST="$PGHOST"
+export TYPECHO_DB_PORT="$PGPORT"
+export TYPECHO_DB_USER="$PGUSER"
+export TYPECHO_DB_PASSWORD="$PGPASSWORD"
+export TYPECHO_DB_DATABASE="$PGDATABASE"
+export TYPECHO_DB_NEXT=keep
+
+init_typecho fpm
+
