@@ -1,0 +1,11 @@
+= railway-typecho-template
+
+Railway starter template for Typecho.
+
+image:https://railway.app/button.svg[Deploy with Railway,link=https://railway.app/new/template/gZCjPd?referralCode=57h7UM]
+
+
+== License
+
+BSD 3-Clause (c) Blair Noctis.
+
