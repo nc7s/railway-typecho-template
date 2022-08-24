@@ -1,7 +1,7 @@
 FROM joyqi/typecho:nightly-php8.0-alpine
 
-RUN mkdir /usr/src/typecho/usr/{plugins,themes}
-RUN touch /usr/src/typecho/usr/{plugins,themes}/.keep
+RUN mkdir /usr/src/typecho/usr/plugins /usr/src/typecho/usr/themes
+RUN touch /usr/src/typecho/usr/plugins/.keep /usr/src/typecho/usr/themes/.keep
 
 ARG PGHOST
 ARG PGPORT
