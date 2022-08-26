@@ -1,9 +1,17 @@
 = railway-typecho-template
 
-Railway starter template for Typecho.
+Railway starter template for Typecho, using PostgreSQL as its database.
 
 image:https://railway.app/button.svg[Deploy with Railway,link=https://railway.app/new/template/gZCjPd?referralCode=57h7UM]
 
+NOTE: Please pay attention to these caveats:
+
+- Depends on joyqi/typecho:nightly-php8.0-alpine, a nightly build, which may contain bugs
+- Due to the way Railway works, there is no persistent file storage, so are uploads
+- Themes and plugins seemingly have to be included in the build phase, a mechanism may be worked on
+or not
+
+And use at your own risk.
 
 == License
 
